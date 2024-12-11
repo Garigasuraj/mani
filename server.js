@@ -7,13 +7,13 @@ const PORT = 3000;
 
 // Middleware
 app.use(bodyParser.json());
-app.use(express.static("public")); // Serve static files like HTML, CSS, JS
+app.use(express.static("public")); 
 
 const db = mysql.createConnection({
-    host: 'database-1.crkcuyiamz5g.us-east-1.rds.amazonaws.com',    // Replace with your MySQL server hostname
-    user: 'admin',          // Replace with your MySQL username
-    password: 'GsurManikanta17aj@17',          // Replace with your MySQL password
-    database: 'database-1' 
+    host: 'database-1.crkcuyiamz5g.us-east-1.rds.amazonaws.com',   
+    user: 'admin',       
+    password: 'Manikanta17',      
+    database: 'todo_app' 
 })
 
 db.connect(err => {
